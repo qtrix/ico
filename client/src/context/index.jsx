@@ -476,7 +476,7 @@ export const StateContextProvider = ({ children }) => {
       const response = await fetch(link);
       const data = await response.json();
 
-      console.log(web3.eth)
+      
       // Get the latest block number
       const blockNumber = await web3.eth.getBlockNumber();
       const responsePrice = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
